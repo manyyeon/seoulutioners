@@ -10,7 +10,7 @@ const Home: React.FC = () => {
       </Head>
       <Header />
       <main className='p-4'>
-        <h2 className='text-2xl'>Welcome to My Company</h2>
+        <h2 className='text-6xl text-white'>Welcome to My Company</h2>
         <p>We provide the best services in the industry.</p>
       </main>
     </div>
