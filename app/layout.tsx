@@ -39,7 +39,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={pretendard.className}>{children}</body>
+      <body>
+        <div className='bg-black'>{children}</div>
+      </body>
     </html>
   );
 }
