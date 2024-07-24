@@ -1,16 +1,21 @@
-import React from 'react';
+'use client';
+
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 const Header: React.FC = () => {
+  const pathname = usePathname();
+
   return (
     <header className='bg-black text-white p-4 flex justify-between fixed w-full'>
-      <Image src={'/assets/images/logo.png'} alt='seoulutioners' width={200} height={800} />
+      <Image src={'/assets/images/logo.png'} alt='SOLA' width={200} height={800} />
       <nav className='flex gap-2 m-2 pr-4 text-lg'>
-        <Link href='/' className='hover:text-xl'>
+        <Link href='/' className={`hover:text-xl ${pathname === '/' ? 'text-gold' : 'text-white'}`}>
           ABOUT US
         </Link>
-        <Link href='/products' className='hover:text-xl'>
+        <Link href='/products' className={`hover:text-xl ${pathname === '/products' ? 'text-gold' : 'text-white'}`}>
           PRODUCTS
         </Link>
       </nav>
