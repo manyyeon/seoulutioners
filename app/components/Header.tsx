@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Header: React.FC = () => {
   return (
-    <header className='bg-black text-white p-4 flex justify-between'>
+    <header className='bg-black text-white p-4 flex justify-between fixed w-full'>
       <Image src={'/assets/images/logo.png'} alt='seoulutioners' width={200} height={800} />
       <nav className='flex gap-2 m-2 pr-4 text-lg'>
         <Link href='/' className='hover:text-xl'>
