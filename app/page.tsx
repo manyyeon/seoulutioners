@@ -65,6 +65,11 @@ const Home: React.FC = () => {
                 <Image src={'/assets/icons/email.svg'} alt='email' width={32} height={32} />
                 <p className='text-lg md:text-2xl whitespace-pre-wrap text-white'>{`sola.luxury@gmail.com`}</p>
               </div>
+
+              <div className='flex items-center gap-2'>
+                <Image src={'/assets/icons/instagram.svg'} alt='instagram' width={32} height={32} />
+                <p className='text-lg md:text-2xl whitespace-pre-wrap text-white'>{`@sola.global`}</p>
+              </div>
             </div>
           </div>
         </div>
